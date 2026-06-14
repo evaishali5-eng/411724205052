@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishali's Responsive Website</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Navbar - Mobile First */
+        nav {
+            display: flex;
+            flex-direction: column;
+            background-color: #fd4545;
+            padding: 10px;
+        }
+
+        nav a {
+            color: rgb(13, 8, 8);
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Desktop Navbar */
+        @media (min-width: 768px) {
+            nav {
+                flex-direction: row;
+                gap: 20px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+        h3{
+            text-align:left;
+        }
+
+        /* Rounded Image */
+       img{
+           width:300px;
+           border-radius:50px;
+           display:block;
+           margin:20px auto;
+}
+
+        /* Video */
+        video {
+            width: 25vw;
+            padding: 10px;
+            background-color: blue;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(35, 211, 206);
+        }
+
+        /* Button */
+        button {
+            border: none;
+            padding: 12px 20px;
+            background-color: rgb(222, 69, 153);
+            color: rgb(18, 13, 13);
+            cursor: pointer;
+            margin: 50px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background-color: rgb(231, 160, 18);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Mobile Grid */
+        @media (max-width: 767px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Heading -->
+    <h1>Vaishali Responsive Website</h1>
+
+    <!-- Image -->
+    <h3>BMW M4 Sports Car</h3>
+
+<img src="CAR.jpg" alt="BMW M4 Car">
+
+<video controls>
+    <source src="drift.mp4" type="video/mp4">
+</video>
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Details</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Engine</td>
+        <td>Twin Turbo</td>
+        <td>3.0L</td>
+    </tr>
+    <tr>
+        <td>Power</td>
+        <td>Horsepower</td>
+        <td>503 HP</td>
+    </tr>
+</table>
+
+<button>Explore BMW M4</button>
+
+    <!-- Grid -->
+    <div class="grid-container">
+    <div class="grid-item">Engine</div>
+    <div class="grid-item">Speed</div>
+    <div class="grid-item">Mileage</div>
+    <div class="grid-item">Safety</div>
+    <div class="grid-item">Interior</div>
+    <div class="grid-item">Exterior</div>
+    <div class="grid-item">Price</div>
+    <div class="grid-item">Reviews</div>
+</div>
+
+</body>
+
+</html>
