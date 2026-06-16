@@ -1,0 +1,112 @@
+<html lang="en>
+<head>
+</head>
+<body>
+    <p id="p">Vaishali</p>
+      </form>
+            <div class="grid">
+                <div id="one">1</div>
+                <div id="two">2</div>
+                <div id="three">3</div>
+                <div id="four">4</div>
+                <div id="five">5</div>
+                <div id="six">6</div>
+            </div>
+            <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+  </div>
+  <table>
+                <tr> 
+                    <th>1</th>
+                    <th>2</th>
+                </tr>
+                <tr> 
+                    <td>Add</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Sub</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .calculator {
+            width: 250px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        button {
+            width: 45px;
+            height: 40px;
+            margin: 5px;
+            font-size: 18px;
+        }
+
+        h3 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="calculator">
+        <h2>Calculator</h2>
+        <input type="number" id="num1" placeholder="Enter First Number"><br>
+        <input type="number" id="num2" placeholder="Enter Second Number"><br>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('/')">/</button>
+        <h3 id="result">Result:</h3>
+    </div>
+    <script>
+        function calculate(operator) {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let result;
+            if (operator === '+') {
+                result = num1 + num2;
+            }
+            else if (operator === '-') {
+                result = num1 - num2;
+            }
+            else if (operator === '*') {
+                result = num1 * num2;
+            }
+            else if (operator === '/') {
+                result = num1 / num2;
+            }
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
+   </body>
+</html>
