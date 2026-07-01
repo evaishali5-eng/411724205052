@@ -1,0 +1,121 @@
+body{
+
+    height:100vh;
+
+    margin:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:'Segoe UI',sans-serif;
+
+
+    background:linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+
+
+}
+.card{
+
+ @vedio: .bmp;
+ @media screen .bmp
+    width:450px;
+
+    padding:40px;
+
+
+    background:rgba(255,255,255,0.12);
+
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.3);
+
+
+    border-radius:20px;
+
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+}
+button{
+
+
+    padding:12px 22px;
+
+
+    margin:8px;
+
+
+    border:none;
+
+
+    border-radius:8px;
+
+
+    cursor:pointer;
+
+
+    font-size:15px;
+
+
+    font-weight:600;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+#addBtn{
+
+
+    background:#d4af37;
+
+
+    color:white;
+
+
+}
+
+
+
+#clearBtn{
+
+
+    background:#8b0000;
+
+
+    color:white;
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:0 8px 15px rgba(0,0,0,0.3);
+
+
+}
